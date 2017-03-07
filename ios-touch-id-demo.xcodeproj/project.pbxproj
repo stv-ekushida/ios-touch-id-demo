@@ -14,6 +14,7 @@
 		BC4216031E6E7BA300727577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4216011E6E7BA300727577 /* LaunchScreen.storyboard */; };
 		BC42160E1E6E7BA300727577 /* ios_touch_id_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42160D1E6E7BA300727577 /* ios_touch_id_demoTests.swift */; };
 		BC4216191E6E7BA300727577 /* ios_touch_id_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4216181E6E7BA300727577 /* ios_touch_id_demoUITests.swift */; };
+		BC4216271E6E7D5A00727577 /* TouchIDUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4216261E6E7D5A00727577 /* TouchIDUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BC4216141E6E7BA300727577 /* ios-touch-id-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-touch-id-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4216181E6E7BA300727577 /* ios_touch_id_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_touch_id_demoUITests.swift; sourceTree = "<group>"; };
 		BC42161A1E6E7BA300727577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4216261E6E7D5A00727577 /* TouchIDUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BC4215FF1E6E7BA300727577 /* Assets.xcassets */,
 				BC4216011E6E7BA300727577 /* LaunchScreen.storyboard */,
 				BC4216041E6E7BA300727577 /* Info.plist */,
+				BC4216261E6E7D5A00727577 /* TouchIDUtil.swift */,
 			);
 			path = "ios-touch-id-demo";
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					BC4215F41E6E7BA300727577 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PCCZJUYRT6;
 						ProvisioningStyle = Automatic;
 					};
 					BC4216081E6E7BA300727577 = {
@@ -259,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4216271E6E7D5A00727577 /* TouchIDUtil.swift in Sources */,
 				BC4215FB1E6E7BA300727577 /* ViewController.swift in Sources */,
 				BC4215F91E6E7BA300727577 /* AppDelegate.swift in Sources */,
 			);
@@ -410,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-touch-id-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-touch-id-demo";
@@ -422,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-touch-id-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-touch-id-demo";

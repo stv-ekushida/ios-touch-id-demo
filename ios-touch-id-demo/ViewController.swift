@@ -7,19 +7,34 @@
 //
 
 import UIKit
+import LocalAuthentication
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
+    private var auth = TouchIDUtil()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setup()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func setup() {
+        auth.authable = self
+        auth.setupAuth()
     }
+}
 
-
+//MARK:-TouchIDAuthable
+extension ViewController: TouchIDAuthable {
+    
+    func complated(status: TouchIDStatusType) {
+        
+        switch status {
+        case .success:
+            print("認証完了")
+        case .failure(let message):
+            print(message)
+        }
+    }
 }
 
